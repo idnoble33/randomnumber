@@ -1,0 +1,14 @@
+
+    input {
+      -webkit-appearance: none;
+      border: 0;
+      font-size: 1.1em;
+      width: 20%;
+      border-bottom: 5px solid #512DA8;
+      margin-bottom: 2em;
+      background: #f0f0f0;
+      padding: 0.4em;
+      border-radius: 0;
+      -webkit-appearance: none;
+      transition: margin 0.2s;
+    }

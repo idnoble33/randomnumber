@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,72 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+body { 
+  background: #ececec;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#generator {
+  background: white;
+  max-width: 25em;
+  animation: fadeIn 1s ease-in-out; 
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#inputs, #headers {
+  display: flex;
+  align-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: #212121;
+}
+  p {
+    font-size: 1em;
+    color: #512DA8;
+    font-weight: 400;
+  }
+  #generate {
+    webkit-appearance: none;
+    width: 100%;
+    padding: 1em 0;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 0;
+    display: block;
+    background: #546fc0;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  #generate:hover {
+      background: #512DA8;;
+    } 
+ 
+
+@media screen and (max-height: 30em) {
+  #generator #randNum {
+    padding: 0;
+    padding-top: 0.1em;
+  }
+  #inputs input {
+    margin-bottom: 1em;
   }
 }
